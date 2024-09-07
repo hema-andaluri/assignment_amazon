@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    
+    color: black;
+}
+
+
+
+
+
+
+header .search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+header .search-bar input[type="text"] {
+  
+    padding: 10px;
+    border: 1px solid white;
+    border-right: none;
+}
+
+header .search-bar button {
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+header .account-section a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.deals, .departments, .recommendations {
+    margin-bottom: 40px;
+}
+
+.deals-grid, .department-grid, .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.deals-grid .deal-item, 
+.department-grid .department-item,
+.recommendations .product-item {
+    border: 1px solid white;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.2s;
+}
+
+.deals-grid .deal-item:hover, 
+.department-grid .department-item:hover, 
+.recommendations .product-item:hover {
+    transform: scale(1.05);
+}
+
+.deals-grid img, 
+.department-grid img, 
+.recommendations img {
+    max-width: 100%;
+    height: auto;
+}
+
+.deals-grid .deal-title, 
+.department-grid .department-title, 
+.recommendations .product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.deals-grid .deal-price, 
+.recommendations .product-price {
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    margin: 10px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: black;
+}
